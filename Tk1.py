@@ -1,0 +1,10 @@
+from tkinter import *
+T=Tk()
+T.title("Sample Window")
+T.geometry('300x300')
+L=Label(text="Hello User",fg="blue",bg='green')
+B=Button(text="Click Me",bg='red',fg='yellow')
+E=Entry(fg="red",bg='white',width=50)
+L.pack()
+B.pack()
+E.pack()

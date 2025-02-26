@@ -1,0 +1,21 @@
+from tkinter import *
+from tkinter import messagebox
+T=Tk()
+T.geometry("300x300")
+def msg():
+    messagebox.showinfo("Information","Here ...is a virus detected")
+    messagebox.showwarning("Information","Here ...is a virus detected")
+    messagebox.showerror("Information","Here ...is a virus detected")
+    messagebox.askquestion("Information","Here ...is a virus detected")
+    messagebox.askokcancel("Information","Here ...is a virus detected")
+    messagebox.askyesno("Information","Here ...is a virus detected")
+    messagebox.askretrycancel("Information","Here ...is a virus detected")
+    top=Toplevel()
+    top.geometry('200x100')
+    top.title('new window')
+    L=Label(top,text="This is new window")
+    L.pack()
+    top.mainloop()
+B=Button(T,text="Scan for Virus",command=msg)
+B.place(x=100,y=100)
+T.mainloop()
